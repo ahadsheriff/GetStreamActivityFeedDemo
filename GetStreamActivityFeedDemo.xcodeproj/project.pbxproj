@@ -13,9 +13,12 @@
 		7B5C38902442D94D00CDB1FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C388E2442D94D00CDB1FC /* Main.storyboard */; };
 		7B5C38922442D94E00CDB1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C38912442D94E00CDB1FC /* Assets.xcassets */; };
 		7B5C38952442D94E00CDB1FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C38932442D94E00CDB1FC /* LaunchScreen.storyboard */; };
+		A47D7AE05C7CB53BD6C00667 /* Pods_GetStreamActivityFeedDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1817C1E4DE2B797AEA7E7407 /* Pods_GetStreamActivityFeedDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1817C1E4DE2B797AEA7E7407 /* Pods_GetStreamActivityFeedDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetStreamActivityFeedDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75719DAC0D2E3148B9ED48D2 /* Pods-GetStreamActivityFeedDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetStreamActivityFeedDemo.debug.xcconfig"; path = "Target Support Files/Pods-GetStreamActivityFeedDemo/Pods-GetStreamActivityFeedDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7B5C38852442D94D00CDB1FC /* GetStreamActivityFeedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetStreamActivityFeedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5C38882442D94D00CDB1FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B5C388A2442D94D00CDB1FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		7B5C38912442D94E00CDB1FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5C38942442D94E00CDB1FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B5C38962442D94E00CDB1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB49E278FD02667A75361B45 /* Pods-GetStreamActivityFeedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetStreamActivityFeedDemo.release.xcconfig"; path = "Target Support Files/Pods-GetStreamActivityFeedDemo/Pods-GetStreamActivityFeedDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47D7AE05C7CB53BD6C00667 /* Pods_GetStreamActivityFeedDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				7B5C38872442D94D00CDB1FC /* GetStreamActivityFeedDemo */,
 				7B5C38862442D94D00CDB1FC /* Products */,
+				C92F453F66FD215350348DA4 /* Pods */,
+				944755B147702FFC25E005DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = GetStreamActivityFeedDemo;
 			sourceTree = "<group>";
 		};
+		944755B147702FFC25E005DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1817C1E4DE2B797AEA7E7407 /* Pods_GetStreamActivityFeedDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C92F453F66FD215350348DA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75719DAC0D2E3148B9ED48D2 /* Pods-GetStreamActivityFeedDemo.debug.xcconfig */,
+				EB49E278FD02667A75361B45 /* Pods-GetStreamActivityFeedDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B5C38992442D94E00CDB1FC /* Build configuration list for PBXNativeTarget "GetStreamActivityFeedDemo" */;
 			buildPhases = (
+				38673334075D8A6AAF76662D /* [CP] Check Pods Manifest.lock */,
 				7B5C38812442D94D00CDB1FC /* Sources */,
 				7B5C38822442D94D00CDB1FC /* Frameworks */,
 				7B5C38832442D94D00CDB1FC /* Resources */,
+				4BB8231F01C34E3C8F1B6F2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38673334075D8A6AAF76662D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetStreamActivityFeedDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BB8231F01C34E3C8F1B6F2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetStreamActivityFeedDemo/Pods-GetStreamActivityFeedDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetStreamActivityFeedDemo/Pods-GetStreamActivityFeedDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetStreamActivityFeedDemo/Pods-GetStreamActivityFeedDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B5C38812442D94D00CDB1FC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		7B5C389A2442D94E00CDB1FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75719DAC0D2E3148B9ED48D2 /* Pods-GetStreamActivityFeedDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		7B5C389B2442D94E00CDB1FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB49E278FD02667A75361B45 /* Pods-GetStreamActivityFeedDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

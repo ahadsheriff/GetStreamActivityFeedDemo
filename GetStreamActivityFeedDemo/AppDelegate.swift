@@ -7,31 +7,25 @@
 //
 
 import UIKit
+import GetStream
+import GetStreamActivityFeed
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Client.config = .init(apiKey: "3ah5azxkgzkh",
+                              appId: "75341")
+        Client.shared.setupUser(GetStreamActivityFeed.User(name: "User One",
+                                                           id: "user-one"),
+                                                           token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoidXNlci1vbmUifQ.iBPETzSNyHhbs0O8opHyLEP8durw0UGLXuZOhAaeJVY") { (result) in
+          if result.error == nil, let viewController = self.window?.rootViewController as? ViewController {
+            viewController.reloadData()
+          }
+        }
+
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
 }
-
